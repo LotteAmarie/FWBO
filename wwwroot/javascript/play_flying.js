@@ -243,8 +243,8 @@ function gameStart()
 		
 		this.loadImages = function()
 		{
-			for (let i = 0; i < 47; i++) {
-				this.storeFiles[i] = `images/play_flying/storefronts/storefront${i+1}.png`;	
+			for (let i = 0; i < 72; i++) {
+				this.storeFiles[i] = `images/play_flying/combined-storefronts/storefront${i+1}.png`;	
 			}
 
 			for (var i = 0; i < this.storeFiles.length; i++) {
@@ -278,7 +278,7 @@ function gameStart()
 		this.xSpeed = 0;
 		this.scale = 0.01;
 		this.imgStore = new Image();
-		this.imgStore.src = "images/play_flying/Storefronts_EAT/EAT_AuntieAnnes_T1_C18.png";
+		this.imgStore.src = "images/play_flying/combined-storefronts/storefront1.png";
 		
 		this.getWidth = function()
 		{
