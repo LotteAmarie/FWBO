@@ -207,8 +207,6 @@ function gameStart()
 	
 	function Stores()
 	{
-		var PATH_EAT = "images/play_flying/Storefronts_EAT/";
-		var PATH_SHOP = "images/play_flying/Storefronts_SHOP/";
 		var store = new Array();
 
 		this.storeFiles = [];
@@ -245,101 +243,14 @@ function gameStart()
 		
 		this.loadImages = function()
 		{
-			// TODO: Automate the population of the storefront images.
-			var i = 0;
-			this.storeFiles[i++] = PATH_EAT + "EAT_.png";
-			this.storeFiles[i++] = PATH_EAT + "EAT_2.png";
-			this.storeFiles[i++] = PATH_EAT + "EAT_3.png";
-			this.storeFiles[i++] = PATH_EAT + "EAT_4.png";
-			this.storeFiles[i++] = PATH_EAT + "EAT_5.png";
-			this.storeFiles[i++] = PATH_EAT + "EAT_6.png";
-			this.storeFiles[i++] = PATH_EAT + "EAT_7.png";
-			this.storeFiles[i++] = PATH_EAT + "EAT_8.png";
-			this.storeFiles[i++] = PATH_EAT + "EAT_9.png";
-			this.storeFiles[i++] = PATH_EAT + "EAT_10.png";
-			this.storeFiles[i++] = PATH_EAT + "EAT_11.png";
-			this.storeFiles[i++] = PATH_EAT + "EAT_12.png";
-			this.storeFiles[i++] = PATH_EAT + "EAT_13.png";
-			this.storeFiles[i++] = PATH_EAT + "EAT_14.png";
-			this.storeFiles[i++] = PATH_EAT + "EAT_15.png";
-			this.storeFiles[i++] = PATH_EAT + "EAT_16.png";
-			this.storeFiles[i++] = PATH_EAT + "EAT_17.png";
-			this.storeFiles[i++] = PATH_EAT + "EAT_18.png";
-			this.storeFiles[i++] = PATH_EAT + "EAT_19.png";
-			this.storeFiles[i++] = PATH_EAT + "EAT_20.png";
-			this.storeFiles[i++] = PATH_EAT + "EAT_21.png";
-			this.storeFiles[i++] = PATH_EAT + "EAT_22.png";
-			this.storeFiles[i++] = PATH_EAT + "EAT_23.png";
-			this.storeFiles[i++] = PATH_EAT + "EAT_24.png";
-			this.storeFiles[i++] = PATH_EAT + "EAT_25.png";
-			this.storeFiles[i++] = PATH_EAT + "EAT_26.png";
-			this.storeFiles[i++] = PATH_EAT + "EAT_27.png";
-			this.storeFiles[i++] = PATH_EAT + "EAT_28.png";
-			this.storeFiles[i++] = PATH_EAT + "EAT_29.png";
-			this.storeFiles[i++] = PATH_EAT + "EAT_30.png";
-			this.storeFiles[i++] = PATH_EAT + "EAT_31.png";
-			this.storeFiles[i++] = PATH_EAT + "EAT_32.png";			
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_2.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_3.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_4.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_5.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_6.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_7.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_8.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_9.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_10.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_11.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_12.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_13.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_14.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_15.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_16.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_17.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_18.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_19.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_20.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_21.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_22.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_23.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_24.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_25.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_26.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_27.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_28.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_29.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_30.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_31.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_32.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_33.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_34.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_35.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_36.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_37.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_38.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_39.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_40.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_41.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_42.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_43.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_44.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_45.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_46.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_47.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_48.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_49.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_50.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_51.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_52.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_53.png";
-			this.storeFiles[i++] = PATH_SHOP + "SHOP_54.png";
-			
-			for (var i = 0; i < this.storeFiles.length; i++)
-			{
+			for (let i = 0; i < 72; i++) {
+				this.storeFiles[i] = `images/play_flying/combined-storefronts/storefront${i+1}.png`;	
+			}
+
+			for (var i = 0; i < this.storeFiles.length; i++) {
 				this.storeImages[i] = new Image();
 				this.storeImages[i].src = this.storeFiles[i];
-				this.storeImages.onload = function()
-				{
+				this.storeImages.onload = function() {
 					setDebugText("Loading " + this.storeFiles[i]);
 				}
 			}
@@ -367,7 +278,7 @@ function gameStart()
 		this.xSpeed = 0;
 		this.scale = 0.01;
 		this.imgStore = new Image();
-		this.imgStore.src = "images/play_flying/Storefronts_EAT/EAT_AuntieAnnes_T1_C18.png";
+		this.imgStore.src = "images/play_flying/combined-storefronts/storefront1.png";
 		
 		this.getWidth = function()
 		{
