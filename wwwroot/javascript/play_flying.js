@@ -125,7 +125,7 @@ function gameStart() {
         buttons.draw();
 
         if (gamePlaying)
-            timeOut = setTimeout(draw, 50);
+            timeOut = setTimeout(draw, 35);
     }
 
     function ArrowButtons() {
@@ -162,7 +162,7 @@ function gameStart() {
 
         this.imgWindow.src = "images/play_flying/skyline-window_bg.png";
 
-        for (var i = 0; i < 30; i++) {
+        for (var i = 0; i < 12; i++) {
             this.imgFloor[i] = new Image();
             var n = fourDigitFormat(i);
             this.imgFloor[i].src = "images/play_flying/floor/" + n + ".png";
