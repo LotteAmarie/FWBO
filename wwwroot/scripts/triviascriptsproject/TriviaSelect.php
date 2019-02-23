@@ -53,6 +53,7 @@
 			$output = "<h2>Question " . $pool . ":</h2>";
 		else
 		{
+		//For the Universal End Page System to work, score must to be securely sent, not like this.
 			$pool = 0;
 			$_SESSION['question'] = 0;
 			$score = $_SESSION["numCorrect"];
