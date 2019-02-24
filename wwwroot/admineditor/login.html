@@ -1,9 +1,9 @@
 ﻿<!DOCTYPE html>
 
-<!-- Login Page
+<!-- Login Page Prototype
     Main page of the subsite. Requires login credentials for access and must redirect to here.
-    Developers: Pethual Anonuevo
-    Last Modified: 1/10/19
+    Developer: Pethual Anonuevo
+    Please convert to PHP to allow implementation appropriate to the format.
     -->
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -13,21 +13,44 @@
     <link rel="stylesheet" href="master.css">
 </head>
 <body>
-    
+    <!-- Check for current session. Redirect to Index if present.
+        If not present, create new session.
+        <?php 
+        if (isset($_SESSION['ID','Auth']))
+        {
 
+        }
+        else
+        {
+        session_start();
+        }
+        ?> 
+        -->
+    <!-- main body box-->
+    <div>
     <!-- This box contains login form. -->
     <div>
+        <h1>Fly with Butch O'Hare</h1>
+        <h2>Administrator Tools</h2>
+        <h2>Login - Authorized Users Only</h2>
         <!-- Enter credential process implementation in form action.
-            ! index.html is a placeholder !
-            Include secure method if action goes to file. -->
-        <form name="frmLogin" action="index.html" method="post">
-            <p>User: <input type="text" name="user" id="txtUser"/></p>
-            <p>Password: <input type="text" name="password" id="txtPassword"/></p>
+            Include a secure method if action goes to file. -->
+        <form name="frmLogin" action="CredCheck.php" method="post">
+            <p>
+                User:
+                <input id="txtUser" type="text" /><br />
+                Password:
+                <input id="txtPass" type="password" />
+            </p>
             <br />
-            <input type="submit" value="Log In" />
+            <input id="btnSubmit" type="submit" value="Enter" />
         </form>
     </div>
+    <!-- This box returns to the main site, in the event of an accidental access. -->
+    <div>
+        <!-- Link back to main site menu; Do not provide link to this subsite! -->
 
-
+    </div>
+</div>
 </body>
 </html>
