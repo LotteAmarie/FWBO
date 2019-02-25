@@ -1,6 +1,6 @@
 <?php
 //connect to database as read-only
-require('./../scripts/triviascriptsproject/dbConnect.php');
+require('adminscripts/dbConnect.php');
 
 $sql = "select * from TriviaQuestionsExplanation where ID = ?;";
 	$stmt = sqlsrv_prepare( $conn, $sql , array( &$ID) );

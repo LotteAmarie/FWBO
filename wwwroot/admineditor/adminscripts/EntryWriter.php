@@ -1,6 +1,6 @@
 <?php
 //connect to database with write permission
-require('./../scripts/aceboardscripts/dbConnect.php');
+require('adminscripts/dbConnect.php');
 
 //determine entry input to be new or edited
 switch (variable) 

@@ -1,6 +1,6 @@
 <?php
 //Extract username and password input and process for user database, using read-only connection
-require('./../scripts/triviascriptsproject/dbConnect.php');
+require('adminscripts/dbConnect.php');
 
 $sql = "select Auth from TriviaQuestionsExplanation where Username = ? and Password = ?;";
 	$stmt = sqlsrv_prepare( $conn, $sql , array( &$User, &$Pass) );

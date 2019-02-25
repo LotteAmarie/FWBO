@@ -1,6 +1,6 @@
 <?php
 //connect to database with read permission
-require('./../scripts/triviascriptsproject/dbConnect.php');
+require('adminscripts/dbConnect.php');
 
 //check total entry count
 $sql = "select count(*) as numQuestions from TriviaQuestionsExplanation;";
