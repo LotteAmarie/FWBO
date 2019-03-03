@@ -1,10 +1,11 @@
 <?php
-//connect to database with write permission
-require('./../scripts/aceboardscripts/dbConnect.php');
 
-//determine entry input to be new or edited
-switch (variable) 
-case '':
+//connect to database with write permission
+require('adminscripts/dbConnect.php');
+
+//determine entry input to be new or edited; switch-case disabled temporarily
+//switch (variable) 
+//case '':
 {
 //Prepare and execute statement for new entries; matching data types required
 $sql = "insert into TriviaQuestionsExplanation values (?, ?, '?', '?', '?', '?', '?', '?', '?', ?, '?')";
@@ -25,9 +26,9 @@ $stmt = sqlsrv_prepare( $conn, $sql, array( &$pool, &$num, &$Question, &$Option1
 
 }
 
-case '':
+//case '':
 {
-//Prepare and execute statement for edited entries; matching data types required
+//Prepare and execute statement for edited entries; matching data types required; ID must be checked before preparing statement to prevent table overwrite corruption.
 $sql = "update TriviaQuestionsExplanation set QuestionPool = ?, QuestionNum = ?, Question = '?',
 Option1 = '?', Option2 = '?', Option3 = '?', Option4 = '?', Option5 = '?', Option6 = '?', QuestionAnswer = ?, QuestionExplanation = '?' where ID = ?";
 $stmt = sqlsrv_prepare( $conn, $sql, array( &$pool, &$num, &$Question, &$Option1, &$Option2, &$Option3, &$Option4, &$Option5, &$Option6, &$Answer, &$Explain, &$id) );
@@ -45,7 +46,7 @@ $stmt = sqlsrv_prepare( $conn, $sql, array( &$pool, &$num, &$Question, &$Option1
 		}
 }
 
-default:
+//default:
 {
 	//Develop error detection means for invalid entry input
 }

@@ -3,7 +3,7 @@ $resp = new stdClass;
 $resp->status = false;
 
 //****CONNECTING TO DATABASE****//
-$connectionInfo = array("UID" => "DevStaffTrivia", "pwd" => "GrummanF4F", "Database" => "FlyWithButchOhareDB", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
+$connectionInfo = array("UID" => "DevStaff", "pwd" => "GrummanF4F", "Database" => "FlyWithButchOhareDB", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
 $serverName = "tcp:flywithbutchohareserver.database.windows.net,1433";
 $conn = sqlsrv_connect($serverName, $connectionInfo);
 	
